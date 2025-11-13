@@ -1,16 +1,15 @@
 /* Color Palette
-   #000000 - Black (primary dark)
-   #5682B1 - Steel Blue (primary)
-   #739EC9 - Cornflower Blue (secondary)
-   #FFE8DB - Peach (accent)
+   #FAF8F1 - Light Cream (primary light)
+   #FAEAB1 - Soft Yellow (accent)
+   #34656D - Teal (primary dark)
+   #334443 - Dark Gray (secondary dark)
 */
 
 :root {
-    --color-primary: #5682B1;
-    --color-secondary: #739EC9;
-    --color-dark: #000000;
-    --color-accent: #FFE8DB;
-    --color-light: #f5f5f5;
+    --color-primary: #34656D;
+    --color-secondary: #334443;
+    --color-accent: #FAEAB1;
+    --color-light: #FAF8F1;
     --color-white: #ffffff;
     --color-gray: #666666;
     
@@ -111,7 +110,7 @@ body {
 
 /* Hero Section */
 .hero {
-    background: linear-gradient(135deg, var(--color-dark) 0%, #1a1a1a 100%);
+    background: linear-gradient(135deg, var(--color-primary) 0%, var(--color-secondary) 100%);
     color: var(--color-white);
     padding: 120px 0;
     text-align: center;
@@ -125,7 +124,7 @@ body {
     font-size: 3.5rem;
     font-weight: 700;
     margin-bottom: 1rem;
-    background: linear-gradient(135deg, var(--color-secondary), var(--color-accent));
+    background: linear-gradient(135deg, var(--color-accent), #FFD700);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     background-clip: text;
@@ -134,7 +133,7 @@ body {
 .hero-subtitle {
     font-size: 1.8rem;
     margin-bottom: 1rem;
-    color: var(--color-secondary);
+    color: var(--color-accent);
 }
 
 .hero-description {
@@ -160,14 +159,14 @@ body {
 }
 
 .btn-primary {
-    background: linear-gradient(135deg, var(--color-primary), var(--color-secondary));
+    background: linear-gradient(135deg, var(--color-primary), var(--color-accent));
     color: var(--color-white);
-    box-shadow: 0 4px 15px rgba(86, 130, 177, 0.4);
+    box-shadow: 0 4px 15px rgba(52, 101, 109, 0.4);
 }
 
 .btn-primary:hover {
     transform: translateY(-2px);
-    box-shadow: 0 6px 20px rgba(86, 130, 177, 0.6);
+    box-shadow: 0 6px 20px rgba(52, 101, 109, 0.6);
 }
 
 /* Sections */
@@ -193,7 +192,7 @@ section {
     transform: translateX(-50%);
     width: 100px;
     height: 4px;
-    background: linear-gradient(90deg, var(--color-primary), var(--color-secondary));
+    background: linear-gradient(90deg, var(--color-primary), var(--color-accent));
     border-radius: 2px;
 }
 
@@ -231,7 +230,7 @@ section {
     display: block;
     font-size: 2.5rem;
     font-weight: 700;
-    background: linear-gradient(135deg, var(--color-primary), var(--color-secondary));
+    background: linear-gradient(135deg, var(--color-primary), var(--color-accent));
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     background-clip: text;
@@ -266,7 +265,7 @@ section {
 
 .project-card:hover {
     transform: translateY(-10px);
-    box-shadow: 0 10px 30px rgba(86, 130, 177, 0.2);
+    box-shadow: 0 10px 30px rgba(52, 101, 109, 0.2);
 }
 
 .project-header {
@@ -369,7 +368,7 @@ section {
 .skill-item {
     display: inline-block;
     padding: 0.6rem 1rem;
-    background: linear-gradient(135deg, var(--color-primary), var(--color-secondary));
+    background: linear-gradient(135deg, var(--color-primary), var(--color-accent));
     color: var(--color-white);
     border-radius: 20px;
     font-size: 0.9rem;
@@ -378,7 +377,7 @@ section {
 
 /* Contact Section */
 .contact {
-    background: linear-gradient(135deg, var(--color-dark) 0%, #1a1a1a 100%);
+    background: linear-gradient(135deg, var(--color-primary) 0%, var(--color-secondary) 100%);
     color: var(--color-white);
 }
 
@@ -412,7 +411,7 @@ section {
 
 .info-item i {
     font-size: 1.5rem;
-    color: var(--color-secondary);
+    color: var(--color-accent);
     flex-shrink: 0;
 }
 
@@ -445,23 +444,23 @@ section {
     align-items: center;
     justify-content: center;
     background: rgba(255, 255, 255, 0.1);
-    border: 2px solid var(--color-secondary);
+    border: 2px solid var(--color-accent);
     border-radius: 50%;
-    color: var(--color-secondary);
+    color: var(--color-accent);
     text-decoration: none;
     transition: var(--transition);
     font-size: 1.2rem;
 }
 
 .social-btn:hover {
-    background: var(--color-secondary);
-    color: var(--color-white);
+    background: var(--color-accent);
+    color: var(--color-primary);
     transform: translateY(-3px);
 }
 
 /* Footer */
 .footer {
-    background-color: var(--color-dark);
+    background-color: var(--color-secondary);
     color: #999;
     text-align: center;
     padding: 2rem 0;
